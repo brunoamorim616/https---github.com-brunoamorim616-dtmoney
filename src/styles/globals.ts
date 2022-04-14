@@ -35,8 +35,9 @@ body {
 }
 
 body, button, input, textarea {
-  font-family: 'Popping', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
+  font-size: 1rem;
 }
 
 h2, h3, h4, h5, h6 {
