@@ -20,8 +20,22 @@ export const Container = styled.div`
   }
 
   strong {
-    font-size: 1.3rem;
+    padding-top: 100px;
+    font-size: 1.5rem;
     font-weight: 400;
+  }
+
+  &.highlight_card {
+    background: var(--green);
+    color: white;
+
+    p {
+      font-weight: 500;
+    }
+
+    strong {
+      font-weight: 600;
+    }
   }
 
   @media (max-width: 925px) {
