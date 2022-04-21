@@ -1,3 +1,1 @@
-import MoneyCard from "./MoneyCard";
-
-export { MoneyCard };
+export { MoneyCard } from "./MoneyCard";

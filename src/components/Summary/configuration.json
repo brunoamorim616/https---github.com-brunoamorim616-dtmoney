@@ -4,27 +4,21 @@
       "componentProps": {
         "type": "incomes",
         "label": "Incomes",
-        "configuration": {
-          "should_highlight": false
-        }
+        "shouldHighlight": false
       }
     },
     {
       "componentProps": {
         "type": "outcomes",
         "label": "Outcomes",
-        "configuration": {
-          "should_highlight": false
-        }
+        "shouldHighlight": false
       }
     },
     {
       "componentProps": {
         "type": "total",
         "label": "Total",
-        "configuration": {
-          "should_highlight": true
-        }
+        "shouldHighlight": true
       }
     }
   ]

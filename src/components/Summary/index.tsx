@@ -1,10 +1,10 @@
-import { MoneyCard } from "./components";
-import { Content, Container } from "./styles";
-import { configuration } from "./config";
 import React from "react";
+import { MoneyCard } from "./components";
+import componentConfiguration from "./configuration.json";
+import { Container, Content } from "./styles";
 
 export function Summary(): React.ReactElement {
-  const { render } = configuration;
+  const { render } = componentConfiguration;
   return (
     <Container>
       <Content>

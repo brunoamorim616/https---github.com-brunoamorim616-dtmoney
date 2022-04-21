@@ -1,2 +1,2 @@
 export { Header } from "./Header";
-export { Summary } from "./Summary";
+export { Dashboard } from "./Dashboard";
