@@ -1,5 +1,23 @@
+import { useEffect, useState } from "react";
+import { getTransactions } from "../../services";
+import { Transaction } from "../../services/TransactionService";
 import { Container } from "./styles";
 export function TransactionsTable() {
+  const [transactions, setTransactions] = useState<Transaction[]>([]);
+
+  function handleSetTransactions(transactions: [Transaction]) {
+    setTransactions(transactions);
+  }
+
+  async function handleGetTransactions() {
+    const response = await getTransactions();
+    if (response.data) return handleSetTransactions(response.data);
+  }
+
+  useEffect(() => {
+    handleGetTransactions();
+  }, []);
+
   return (
     <Container>
       <table>
